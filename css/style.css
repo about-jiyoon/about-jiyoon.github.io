@@ -3063,10 +3063,11 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 .hover-option11 .grid-item:hover .portfolio-hover-content {bottom:0;}
 .hover-option11 .swiper-slide.grid-item figcaption {position: absolute; top: 0; width:100%; opacity: 0}
 .hover-option11 .swiper-slide.grid-item:hover figcaption {opacity: 1}
-.hover-option11 .grid-item .portfolio-item-title{ transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -ms-transition: all 0.2s ease 0s;}
+.hover-option11 .grid-item .portfolio-item-title, .portfolio-item-subtitle { transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -ms-transition: all 0.2s ease 0s;}
 
 .hover-option11 .grid-item > a:hover .portfolio-item-title { color: #fff;}
-.hover-option11 .grid-item .portfolio-img { margin-bottom: 33px; transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -ms-transition: all 0.2s ease 0s;}
+.hover-option11 .grid-item > a:hover .portfolio-item-subtitle { opacity: 0.5;}
+.hover-option11 .grid-item .portfolio-img { margin-bottom: 20px; transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -ms-transition: all 0.2s ease 0s;}
 .hover-option11 .grid-item .portfolio-img img {box-shadow: 0 0 8px rgba(0,0,0,1);}
 .hover-option11 .grid-item:hover .portfolio-img img {opacity: .6; transition: all 0.2s ease 0s; -webkit-transition: all 0.2s ease 0s; -moz-transition: all 0.2s ease 0s; -o-transition: all 0.2s ease 0s; -ms-transition: all 0.2s ease 0s;}
 
