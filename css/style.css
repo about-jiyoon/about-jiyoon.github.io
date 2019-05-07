@@ -42,6 +42,11 @@ Table of contents
 
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
+@import url('font/OpenArrow-Regular.eot');
+@import url('font/OpenArrow-Regular.woff2');
+@import url('font/OpenArrow-Regular.woff');
+@import url('font/OpenArrow-Regular.otf');
+@import url('font/OpenArrow-Regular.ttf');
 
 .bg-year {
     background-color: #f4f4f4;
@@ -89,6 +94,7 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 /* font family */
 .alt-font {font-family: 'Space Mono', monospace; font-weight: 500; letter-spacing: 0px;}
 .main-font {font-family: 'Spoqa Han Sans', sans-serif;}
+.arrow-font {font-family: 'open-arrow'; font-weight: normal; font-style: normal; unicode-range: U+2190-21ff;}
 
 /* heading */
 h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 1.5px; font-weight: 400;}
@@ -101,10 +107,11 @@ h6 {font-size:25px; line-height:30px}
 
 /* text size */
 .text-extra-small {font-size:11px; line-height:14px}
-.text-small {font-size:12px; line-height:20px}
-.text-medium {font-size:16px; line-height:23px}
-.text-large {font-size:18px; line-height:26px}
-.text-extra-large {font-size: 20px; line-height:26px}
+.text-small {font-size:1.2em; line-height:1.3em;}
+.text-small-kr {font-size:1.1em; line-height:1.5em; word-break: keep-all;}
+.text-medium {font-size:1.5em; line-height:1.6em; letter-spacing: 0.8px;}
+.text-large {font-size:1.8em; line-height:26px}
+.text-extra-large {font-size: 2.2em; line-height:2.2rem;}
 .title-large {font-size: 100px; line-height:95px}
 .title-extra-large {font-size: 130px; line-height:120px}
 
@@ -276,7 +283,8 @@ a.text-very-light-gray-hover:hover {color:#ededed !important;}
 /* ===================================
     Custom
 ====================================== */
-section {padding: 130px 0; overflow: hidden;}
+section {padding: 110px 0; overflow: hidden;}
+section.s-section {padding: 130px 0 20px 0;}
 section.big-section {padding:160px 0;}
 section.extra-big-section {padding:200px 0;}
 section.half-section {padding:80px 0;}
@@ -2358,7 +2366,7 @@ header nav .navbar-nav > li > a:hover, header nav .navbar-nav > li > a:focus, he
 header nav .navbar-nav > li:last-child a { margin-right: 0;}
 .navbar-fixed-bottom, .navbar-fixed-top {z-index: 9999}
 header nav.navbar-default .navbar-nav > li > a:hover, header nav.navbar-default .navbar-nav > li > a:focus, header nav.navbar-default .navbar-nav > li.active > a {border-bottom-color: #232323}
-header nav .navbar-nav.text-normal > li > a {font-weight: 600; font-size: 12px }
+header nav .navbar-nav.text-normal > li > a {font-weight: 300; font-size: 1.5em;}
 .navbar-nav > li { position: inherit;}
 .navbar-nav > li.dropdown > .fas { display: none}
 .navbar-nav > li ul { margin: 0; padding: 0;}
@@ -2563,7 +2571,7 @@ header nav.nav-box-width {padding: 0 50px;}
 .big-menu-close {background: #fff; position: absolute; right: 0; width: 40px; height: 40px; color: #232323; }
 
 /* dropdown menu */
-nav.navbar.navbar-default ul.nav > li > a {padding:26px 0; letter-spacing: 1.5px; background: transparent; border-color: transparent; font-weight: 600; display: block;}
+nav.navbar.navbar-default ul.nav > li > a {padding:26px 0; letter-spacing: 1.5px; background: transparent; border-color: transparent; display: block;}
 nav.navbar.navbar-default ul.nav > li.dropdown > a.dropdown-toggle::after, nav.navbar.sidebar-nav ul.nav > li.dropdown > a.dropdown-toggle::after {content: ""; vertical-align: middle; position: relative; top: -1px; margin-top: 0; }
 nav.navbar.navbar-default ul li.dropdown ul.dropdown-menu > li:last-child {border-bottom: 0; border-bottom: 0;}
 nav.navbar.navbar-default ul li.dropdown .dropdown-menu li > a:hover  {color: #fff; background:  transparent; left: 5px; }
@@ -3077,14 +3085,8 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 /* portfolio filter tab style 1 */
 .portfolio-filter-tab-1 li {margin: 0 25px; display: inline-block; float: none}
 .portfolio-filter-tab-1 li a {background: transparent; border: none; padding:0 0 2px 0; display: inline; color:#6f6f6f; margin: 0; border-bottom: 1px solid transparent;}
-.portfolio-filter-tab-1 li a:hover, .portfolio-filter-tab-1 li a:focus {background: transparent; border-bottom: 1px solid #232323; color:#232323}
-.portfolio-filter-tab-1 li.active a {background: transparent !important; border-bottom: 1px solid #232323; color: #232323;}
-
-/* portfolio filter tab style 2 */
-.portfolio-filter-tab-2 li.nav-item{ display: inline-block; float: none;}
-.portfolio-filter-tab-2 li.nav-item a.nav-link{ border: none; border-radius: 50px !important; padding: 7px 24px; margin-right: 4px; border-color: transparent !important;}
-.portfolio-filter-tab-2 li.nav-item a.nav-link:hover, .portfolio-filter-tab-2 li.nav-item > a.nav-link:focus{ background: rgba(144,144,144,0.22); color: #fff; border-color: transparent !important;}
-.portfolio-filter-tab-2.nav-tabs li.nav-item.active a.nav-link, .portfolio-filter-tab-2.nav-tabs li.nav-item.active a.nav-link:focus, .portfolio-filter-tab-2.nav-tabs li.nav-item.active a.nav-link:hover{ border: none; background: rgba(144,144,144,0.22); color: #fff; border: none;}
+.portfolio-filter-tab-1 li a:hover, .portfolio-filter-tab-1 li a:focus {background: transparent; border-bottom: 1px solid #ffffff; color:#ffffff}
+.portfolio-filter-tab-1 li.active a {background: transparent !important; border-bottom: 1px solid #ffffff; color: #ffffff;}
 
 /* blog and portfolio next pagination */
 .blog-nav-link {padding: 30px 0; display: inline-block; vertical-align: middle; font-size: 16px; position: relative}
