@@ -42,11 +42,6 @@ Table of contents
 
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
-@import url('font/OpenArrow-Regular.eot');
-@import url('font/OpenArrow-Regular.woff2');
-@import url('font/OpenArrow-Regular.woff');
-@import url('font/OpenArrow-Regular.otf');
-@import url('font/OpenArrow-Regular.ttf');
 
 .bg-year {
     background-color: #f4f4f4;
@@ -94,7 +89,6 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 /* font family */
 .alt-font {font-family: 'Space Mono', monospace; font-weight: 500; letter-spacing: 0px;}
 .main-font {font-family: 'Spoqa Han Sans', sans-serif;}
-.arrow-font {font-family: 'open-arrow'; font-weight: normal; font-style: normal; unicode-range: U+2190-21ff;}
 
 /* heading */
 h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 1.5px; font-weight: 400;}
