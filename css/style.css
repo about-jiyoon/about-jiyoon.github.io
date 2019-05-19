@@ -43,20 +43,11 @@ Table of contents
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
 
-.bg-year {
-    background-color: #f4f4f4;
-    border-radius: 3px;
-    font-family: 'space-mono';
-    padding: .2em .4em;
-    margin-left: .4em;
-}
-
 @font-face {
     font-family: 'shrill';
-    src: url('../fonts/shrill.woff2') format('woff2'),
-         url('../fonts/shrill.woff') format('woff'),
-         url('../fonts/shrill.otf') format('embedded-opentype');
-    src: local('→'), url('../fonts/shrill.otf') format('truetype');
+    src: url('../fonts/untitled.woff') format('woff'),
+         url('../fonts/untitled.woff2') format('woff2'),
+         url('../fonts/untitled.eot') format('eot');
     font-weight: normal;
     font-style: normal;
 }
@@ -94,17 +85,18 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 
 /* ===================================
     Typography
+    .alt-font {font-family: 'Space Mono', monospace; font-weight: 500; letter-spacing: 0px;}
 ====================================== */
 
 /* font family */
-.alt-font {font-family: 'Space Mono', monospace; font-weight: 500; letter-spacing: 0px;}
+.alt-font {font-family: 'shrill', sans-serif; letter-spacing: 0px;}
 .main-font {font-family: 'Spoqa Han Sans', sans-serif;}
-.shrill {font-family: 'shrill', serif;}
+.shrill {font-family: 'shrill', sans-serif;}
 
 /* heading */
-h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 1.5px; font-weight: 400;}
-h1 {font-size:10em; line-height: 1em;}
-h2 {font-size:5em; line-height:1em;}
+h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0;}
+h1 {font-size:7em; line-height: 1em; }
+h2 {font-size:4.5em; line-height:1.1em;}
 h3 {font-size:4em; line-height:54px}
 h4 {font-size:40px; line-height:46px}
 h5 {font-size:32px; line-height:40px}
