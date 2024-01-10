@@ -1,6 +1,7 @@
 "use client";
 
 import { Work } from "@/data/interfaces";
+import clsx from "clsx";
 import { useRouter } from "next/navigation";
 
 export default function WorkItem({ work }: { work: Work }) {
@@ -8,12 +9,21 @@ export default function WorkItem({ work }: { work: Work }) {
 
   return (
     <div
-      className="hover:cursor-pointer"
+      className="hover:cursor-pointer break-inside-avoid"
       onClick={() => {
         router.push(work.title.replaceAll(" ", "-"), { scroll: false });
       }}
     >
-      <div className="aspect-square bg-slate-400"></div>
+      <div
+        className={clsx(
+          "w-full bg-slate-400",
+          ~~((Math.random() * 10) % 2) === 0
+            ? "h-32"
+            : ~~((Math.random() * 10) % 2) === 0
+            ? "h-44"
+            : "h-40"
+        )}
+      ></div>
 
       {work.title}
     </div>

@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <h1 className="text-4xl">About jiyoon</h1>
         </section>
 
-        <section className="sm:grid sm:grid-cols-4 gap-2">
+        <section className="sm:columns-3 gap-2">
           {works.map((work, index) => (
             <WorkItem key={index} work={work} />
           ))}
